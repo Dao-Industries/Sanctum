@@ -72,7 +72,7 @@ Consistency: MVP needs to have data states consistent. When a user rolls for som
 
 ## Design Details
 ### High Level Design
-[Rough High Level Design](/_images/High_LeveL_Design.png)
+![Rough High Level Design](/_images/High_LeveL_Design.png)
 
 In this design, we will be using the micro-service architecture, where each service is responsible for a subset of operations. We should be dealing with a relatively read-heavy system, especially with campaigns, items, and collections. The gacha service is an independent service that serves as the "core" of Sanctum, and acts as both a data consumer and producer, ensuring data consistency.
 
@@ -83,7 +83,7 @@ In this high-level design document, we will not go into specific details about o
 
 At a high-level, we can visualize the following tables and relations:
 
-[Rough Data Models](/_images/Data_Models.png)
+![Rough Data Models](/_images/Data_Models.png)
 
 - Items and Collections are deliberately kept separate
 - Campaigns operate on Collections only
